@@ -1,0 +1,149 @@
+html {
+	font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+body {
+  color: #444;
+  font-size: 1.6rem;
+  font-family: 'Gentium Book Plus', serif;
+}
+
+main {
+  background-color: rgb(250, 250, 232);
+}
+
+.dropcap {
+  font-size: 6rem;
+}
+
+p {
+  margin-bottom: .67em;
+}
+
+nav {
+  background-color: #54a6f8;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0 .3em 0;
+  background-color: #94c6f7;
+}
+
+/*-- Main Menu Styles--*/
+nav ul {
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav a:link, nav a:visited {
+  color: #383838;
+  text-decoration: none;
+}
+nav a:hover, nav a:active  {
+  color: #F0F0F0;
+  text-decoration: underline;
+}
+nav a.active {
+  color: #fff;
+}
+
+/*-- Hero Unit Styles--*/
+header {
+  width: 510px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+header img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.small {
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: #999;
+}
+
+header, article {
+  margin: auto;
+}
+
+/*-- Article Styles--*/
+article {
+  width: 768px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+article figure {
+  width: 39%;
+  margin: 0 0 1.25em 1.25em;
+  float: right;
+}
+
+article figcaption {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #777;
+  font-weight: 100;
+}
+
+.pagination {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 96%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a.button {
+  border: 2px solid #888;
+  padding: .4em 1em .4em 1em;
+  text-decoration: none;
+  color: #888;
+  border-radius: 200px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 80%;
+}
+a.button:hover, a.button:active {
+  border: 1px solid #444;
+  text-decoration: none;
+  color: #222;
+}
+
+footer {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+/*-- changes header and article width on small screens --*/
+@media screen and (max-width: 768px) {
+  header {width: 96%;}
+  article {width: 96%;}
+}
